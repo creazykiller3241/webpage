@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElSanti</title>
-    <!-- Incluir Bootstrap -->
+    <title>ElSanti - Inicio</title>
+    <!-- Incluir Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Estilos personalizados -->
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             background-color: black;
             color: yellow;
             font-family: 'Arial', sans-serif;
@@ -44,13 +39,38 @@
     </style>
 </head>
 <body>
-    <div class="text-center">
-        <h1>ElSanti</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ElSanti</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto"> <!-- ms-auto para alinear a la derecha -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container text-center mt-5">
+        <h1>Bienvenido a ElSanti</h1>
         <!-- Opción para colocar una imagen -->
-        <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/42bc8efbea4ad24f9d134d4de0ea974d~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=87369&refresh_token=82f166017d5d587e69d867768bdfadaf&x-expires=1728183600&x-signature=eIcZcsy9ItwKmyDpS4f68E6Nbsc%3D&shp=a5d48078&shcp=81f88b70" alt="My name is" class="custom-image">
+        <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/42bc8efbea4ad24f9d134d4de0ea974d~c5_1080x1080.jpeg" alt="ElSanti" class="custom-image">
     </div>
 
     <!-- Incluir Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
